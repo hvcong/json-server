@@ -1,0 +1,41 @@
+@baseUrl=http://localhost:3000/api
+@resouceName=products
+#products
+
+# @name getAll
+GET {{baseUrl}}/{{resouceName}}
+
+###
+
+# @name pagination
+GET {{baseUrl}}/{{resouceName}}?_page=1&_limit=3
+
+###
+
+# @name addNew
+POST  {{baseUrl}}/{{resouceName}}
+Content-Type: application/json
+
+{
+    "categoryId": "4b35fb7d-6be0-455a-9f74-10d8c7eac5a1",
+    "name": "Small Wooden Mouse",
+    "color": "gold",
+    "price": 915,
+    "discription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+    "thumbnailUrl": "http://placeimg.com/200/200"
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resouceName}}/3LO7eRr
+Content-Type: application/json
+
+{
+    "categoryId": "4b35fb7d-6be0-455a-9f74-10d8c7eac5a1",
+    "name": "Small Wooden Mouse",
+    "color": "gold",
+    "price": 918,
+    "discription": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+    "thumbnailUrl": "http://placeimg.com/200/200"
+}

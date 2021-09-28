@@ -1,0 +1,14 @@
+@baseUrl=http://localhost:3000/api
+@resouceName=categories
+#products
+
+# @name getAll
+GET {{baseUrl}}/{{resouceName}}
+
+###
+
+# @name pagination
+GET {{baseUrl}}/{{resouceName}}?_page=1&_limit=3
+
+###
+

@@ -1,0 +1,21 @@
+{
+  "name": "json_server",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node generate-data.js && nodemon main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "query-string": "^7.0.1"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.13"
+  }
+}
