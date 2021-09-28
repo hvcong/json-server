@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "npm run generate-data && node main.js",
+    "start": "node generate-data && node main.js",
     "dev": "nodemon main.js"
   },
   "author": "",
